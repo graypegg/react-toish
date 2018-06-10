@@ -1,22 +1,21 @@
 import * as React from 'react'
-import RouterContainer from '../RouterContainer'
+import { Route, Switch, Link } from 'react-router-dom'
+
+import PageHome from './PageHome/PageHome'
 
 import './App.css'
 
-interface IAppProps {
-
-}
-
-interface IAppState {
-
-}
-
-class App extends React.Component<IAppProps, IAppState> {
-  public render(): JSX.Element {
-    return (
-      <RouterContainer />
-    )
-  }
+function App (): JSX.Element {
+  return (
+    <div className="App__wrapper">
+      <Link to="/one">One</Link>
+      <Link to="/two">Two</Link>
+      
+      <Switch>
+        <Route path="/one" component={ PageHome } />
+      </Switch>
+    </div>
+  )
 }
 
 export default App

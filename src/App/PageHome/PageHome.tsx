@@ -1,21 +1,13 @@
 import * as React from 'react'
 
-interface IPageHomeProps {
+import Counter from './Counter/Counter'
 
-}
-
-interface IPageHomeState {
-
-}
-
-class PageHome extends React.Component<IPageHomeProps, IPageHomeState> {
-  public render(): JSX.Element {
-    return (
-      <div className="page">
-        Hey!
-      </div>
-    )
-  }
+function PageHome (): JSX.Element {
+  return (
+    <div className="page">
+      <Counter />
+    </div>
+  )
 }
 
 export default PageHome

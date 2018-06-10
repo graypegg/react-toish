@@ -14,7 +14,6 @@
     "@types/enzyme": "^3.1.10",
     "@types/lodash": "^4.14.109",
     "@types/react-redux": "^6.0.2",
-    "@types/react-router": "^4.0.26",
     "@types/react-router-dom": "^4.2.7",
     "@types/redux": "^3.6.0",
     "lodash": "^4.17.10",

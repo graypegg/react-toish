@@ -1,7 +1,21 @@
 import { combineReducers } from 'redux'
 
-import exampleReducer from './exampleReducer'
+/* Import all reducers with default states */
+import { exampleReducer, IExampleReducerState, exampleReducerState } from './exampleReducer'
 
-const reducer = combineReducers(exampleReducer)
+/* Combine all reducers into one mega-reducer */
+const reducer = combineReducers({
+  exampleReducer
+})
 
-export default reducer
+/* Combine all default state types into one interface */
+interface IState {
+  exampleReducer: IExampleReducerState
+}
+
+/* Combine all default states into one */
+const defaultState: IState = {
+  exampleReducer: exampleReducerState
+}
+
+export { reducer, IState, defaultState }
