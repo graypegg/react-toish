@@ -1,6 +1,6 @@
 {
-  "name": "jordan",
-  "homepage": "https://toi.sh/careers",
+  "name": "toish-react",
+  "homepage": "https://toi.sh/",
   "version": "0.1.0",
   "private": true,
   "jest": {
